@@ -3,4 +3,21 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="txt_search">Search</string>
+    <string name="text_hint_chords">Chords (A_Maj7...)</string>
+    <string name="textview_results">Results</string>
+    <string name="title_search">Search</string>
+    <string name="title_results">Results</string>
+    <string name="title_fav">Favoris</string>
+    <string name="text_chord_infos">Chord Infos</string>
+    <string name="text_analyze">Analyze</string>
+    <string name="text_do_research">Please, do a research before.</string>
+    <string name="text_tones">Tones</string>
+    <string name="text_name">Name:</string>
+    <string name="text_no_chord_selected">No chord selected</string>
+    <string name="text_added_to_fav">added to favorite.</string>
+    <string name="text_retired_from_fav">retired from favorite.</string>
+    <string name="text_tuning">Tuning</string>
+    <string name="text_strings">Strings</string>
+    <string name="text_fingering">Fingering</string>
 </resources>

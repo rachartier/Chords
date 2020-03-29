@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="chordVM"
+                type="fr.iut.chords.database.viewmodel.ChordViewModel" />
+        <import type="android.view.View"/>
+    </data>
+
+    <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:text="@{chordVM.printableNameWithTones()()}">
+                </TextView>
+
+                <ImageButton
+                        android:id="@+id/button_fav"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="end"
+                        android:layout_margin="3dp"
+                        android:src="@{chordVM.isInFavLiveData().booleanValue() == true ? @drawable/ic_favorite_black_24dp : @drawable/ic_favorite_border_black_24dp}"
+                        />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <GridLayout
+                android:id="@+id/gridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:padding="10dp"/>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <WebView
+                    android:layout_gravity="bottom"
+                    android:id="@+id/webview"
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</layout>

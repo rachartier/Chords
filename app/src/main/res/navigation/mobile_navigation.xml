@@ -5,21 +5,21 @@
             android:id="@+id/mobile_navigation"
             app:startDestination="@+id/navigation_home">
 
-    <fragment
+    <keep_state_fragment
             android:id="@+id/navigation_home"
-            android:name="fr.iut.chords.ui.home.HomeFragment"
+            android:name="fr.iut.chords.ui.search.SearchFragment"
             android:label="@string/title_home"
-            tools:layout="@layout/fragment_home"/>
+            tools:layout="@layout/fragment_search"/>
 
-    <fragment
+    <keep_state_fragment
             android:id="@+id/navigation_dashboard"
-            android:name="fr.iut.chords.ui.dashboard.DashboardFragment"
+            android:name="fr.iut.chords.ui.results.ResultFragment"
             android:label="@string/title_dashboard"
-            tools:layout="@layout/fragment_dashboard"/>
+            tools:layout="@layout/fragment_result"/>
 
-    <fragment
+    <keep_state_fragment
             android:id="@+id/navigation_notifications"
-            android:name="fr.iut.chords.ui.notifications.NotificationsFragment"
+            android:name="fr.iut.chords.ui.chordinfo.ChordInfoFragment"
             android:label="@string/title_notifications"
-            tools:layout="@layout/fragment_notifications"/>
+            tools:layout="@layout/fragment_chord_info"/>
 </navigation>
