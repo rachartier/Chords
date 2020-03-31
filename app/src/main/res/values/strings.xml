@@ -4,11 +4,11 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="txt_search">Search</string>
-    <string name="text_hint_chords">Chords (A_Maj7...)</string>
+    <string name="text_hint_chords">Chord (a maj7, b, e m7b5...)</string>
     <string name="textview_results">Results</string>
     <string name="title_search">Search</string>
     <string name="title_results">Results</string>
-    <string name="title_fav">Favoris</string>
+    <string name="title_fav">Bookmarks</string>
     <string name="text_chord_infos">Chord Infos</string>
     <string name="text_analyze">Analyze</string>
     <string name="text_do_research">Please, do a research before.</string>

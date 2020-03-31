@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content">
                 <TextView
                         android:id="@+id/title"
-                        android:layout_width="wrap_content"
+                        android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
@@ -41,7 +41,7 @@
                         android:background="@android:color/transparent"
                         android:layout_gravity="end"
                         android:layout_margin="3dp"
-                        android:src="@{chordVM.isInFavLiveData().booleanValue() == true ? @drawable/ic_favorite_black_24dp : @drawable/ic_favorite_border_black_24dp}"
+                        android:src="@{chordVM.isInFavLiveData ? @drawable/ic_favorite_black_24dp : @drawable/ic_favorite_border_black_24dp}"
                         />
             </LinearLayout>
         </RelativeLayout>

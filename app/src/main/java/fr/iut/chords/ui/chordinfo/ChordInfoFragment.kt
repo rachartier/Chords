@@ -46,7 +46,7 @@ class ChordInfoFragment : Fragment() {
             chordViewModel.loadFromApi(chordId, isInFav)
         }
 
-        if (chordViewModel.nameLiveData.value == null && chordId == "null") {
+        if ((chordViewModel.nameLiveData.value == null || chordViewModel.nameLiveData.value == "none") && chordId == "null") {
             chordViewModel.nameLiveData.value = getString(R.string.text_no_chord_selected)
 
             binding.buttonFav.visibility = View.GONE
@@ -127,8 +127,6 @@ class ChordInfoFragment : Fragment() {
 
         val parsedStrings = chordViewModel.stringsLiveData.value!!.split(" ")
         val parsedFingering = chordViewModel.fingeringLiveData.value!!.split(" ")
-
-        var putNothing = mutableListOf<Int>()
 
         val values = arrayOf(listOf("E", "A", "D", "G", "B", "E"), parsedStrings, parsedFingering)
 
